@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet3 Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R-mi972/Ohmyfood.git"
+  },
+  "author": "Pollux Rémi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R-mi972/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/R-mi972/Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
