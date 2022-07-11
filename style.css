@@ -1,0 +1,16 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    box-shadow: #3535353b 1px 2px;
+    padding: .3rem;
+}
