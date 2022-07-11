@@ -1,0 +1,37 @@
+.city {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   & i {
+       font-size: 1.5rem;
+    }
+ }
+
+ /* Explorer*/
+
+ .explorer {
+    text-align: center;
+ }
+
+ .explorer h2 {
+    margin-top: .2rem;
+    font-size: 35px;
+ }
+
+ .explorer p{
+    font-size: 16px;
+ }
+
+ 
+ .funtionning {
+   & ol{
+      display: flex;
+   }
+   & li {
+      background-color: "#f6f6f6";
+      padding: 1rem 2rem;
+   }
+ }
