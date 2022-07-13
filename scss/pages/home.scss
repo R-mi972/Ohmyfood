@@ -1,6 +1,9 @@
+@import"../utils/variables.scss";
+
+
 .paris {
     display: flex;
-    background-color: #f6f6f6;
+    background-color: $light-grey;
     padding: .5rem;
     align-items: center;
     justify-content: center;
@@ -16,22 +19,23 @@
     text-align: center;
  }
 
- .explorer h2 {
+.explorer h2 {
     margin-top: .2rem;
     font-size: 35px;
  }
 
- .explorer p{
+.explorer p{
     font-size: 16px;
  }
 
  
- .funtionning {
-    & ol{
+.functionning {
+
+   & ol{
       display: flex;
    }
    & li {
-      background-color: "#f6f6f6";
+      background-color: $light-grey;
       padding: 1rem 2rem;
    }
  }

@@ -1,5 +1,7 @@
+@import"../utils/variables.scss";
+
 header{
-    font-family: "Shrikhand", cursive;
+    font-family: $ff-shrikhand;
     text-align: center;
     box-shadow: #3535353b 1px 2px;
     padding: .3rem;

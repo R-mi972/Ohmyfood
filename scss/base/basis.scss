@@ -1,3 +1,6 @@
+@import"../utils/variables.scss";
+
+
 *,
 ::before,
 ::after{
@@ -6,5 +9,9 @@
 
 body{
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: $ff-roboto;
+}
+
+main {
+  padding: 0 1.5rem;
 }
