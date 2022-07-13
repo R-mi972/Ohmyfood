@@ -1,9 +1,9 @@
-/* Error: expected "}".
+/* Error: Can't find stylesheet to import.
  *   ,
- * 9 |   }
- *   |    ^
+ * 1 | @import"./utils/variables.scss";
+ *   |        ^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
- *   utils\media_queries.scss 9:4  @import
+ *   utils\media_queries.scss 1:8  @import
  *   style.scss 7:8                root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a   \2577 \a 9 \2502    }\a   \2502     ^\a   \2575 \a   utils\\media_queries.scss 9:4  @import\a   style.scss 7:8                root stylesheet';
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import\"./utils/variables.scss\";\d\a   \2502         ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   utils\\media_queries.scss 1:8  @import\a   style.scss 7:8                root stylesheet";
 }
