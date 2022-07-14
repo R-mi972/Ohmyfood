@@ -1,0 +1,13 @@
+@import"../utils/variables.scss";
+@import"../utils/mixins.scss";
+
+
+    .resto_cards {
+        display: flex;
+    
+        & .card{
+        border: 1px solid black;
+        height: 4rem;
+
+    }
+}

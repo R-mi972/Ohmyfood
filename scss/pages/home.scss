@@ -94,11 +94,16 @@
             @include scaling;
         }
     & i.fa-solid {
-        color: #35353594;
+        color: #f6f6f6;
         margin-right: 1rem;
         font-size: 1.4rem;
 
      }
     }
 
+}
+
+.resto {
+    background-color: #f6f6f6;
+    padding: 3rem 1rem;
 }
