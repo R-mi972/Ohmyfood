@@ -1,0 +1,14 @@
+@import"../utils/variables.scss";
+
+
+@mixin box-shadow {
+    box-shadow: 2px 1px 8px -3px #000;
+    
+}
+
+@mixin scaling {
+    transform: scale(1.02);
+}
+
+
+

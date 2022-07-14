@@ -1,12 +1,5 @@
-@import"./base/basis.scss";
-@import"./layout/header";
-@import"./layout/footer.scss";
-@import"./components/buttons.scss";
-@import"./pages/home.scss";
 @import"./utils/variables.scss";
-@import"./utils/media_queries.scss";
-
-
-
-
-
+@import"./layout/footer.scss";
+@import"./layout/navbar.scss";
+@import"./pages/home.scss";
+@import"./base/basis.scss"
