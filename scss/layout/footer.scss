@@ -1,0 +1,17 @@
+@import"../utils/variables.scss";
+@import"../utils/mixins.scss";
+
+
+footer {
+    background: $dark-grey;
+    padding:0 2rem;
+    color: #fff;
+    h2 {
+        font-family: $ff-shrikhand;
+        font-weight: 500;
+    }
+
+    p{
+        padding: 0.2 ;
+    }
+}

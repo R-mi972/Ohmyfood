@@ -1,3 +1,16 @@
+footer {
+  background: #353535;
+  padding: 0 2rem;
+  color: #fff;
+}
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+}
+footer p {
+  padding: 0.2;
+}
+
 .navbar {
   display: flex;
   font-family: "Shrikhand", sans-serif;
@@ -56,6 +69,7 @@
 
 .functioning {
   counter-reset: steps;
+  margin-bottom: 2rem;
 }
 .functioning h2 {
   padding: 3rem 0;
@@ -77,6 +91,7 @@
   border: none;
   flex-grow: 1;
   border-radius: 20px;
+  cursor: pointer;
   box-shadow: 2px 1px 8px -3px #000;
 }
 .functioning li::before {
@@ -102,11 +117,6 @@
   font-size: 1.4rem;
 }
 
-.resto {
-  background-color: #f6f6f6;
-  padding: 3rem 1rem;
-}
-
 *,
 ::before, ::after {
   box-sizing: border-box;
@@ -119,7 +129,7 @@ body {
 }
 
 main {
-  padding: 0 5rem;
+  padding: 0 7rem;
 }
 
 h1 h2 h3 h4 h5 h6 {
