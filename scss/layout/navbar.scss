@@ -1,18 +1,25 @@
 @import"../utils/variables.scss";
-@import"../utils/mixins.scss";
+@import "../utils/mixins.scss";
 
-
-  
-  .navbar {
+.navbar {
   display: flex;
-  font-family: $ff-shrikhand;
-  font-size: 1.5rem;
-  text-align: center;
+  background-color: white;
   box-shadow: #1515153b 1px 2px;
-  position: relative;
-  height: 60px;
+  position: fixed;
+  top: 0;
+  height: $navheight;
   width: 100%;
-  padding: .5rem;
+  z-index: 10;
   align-items: center;
   justify-content: center;
+  &__title {
+    font-family: $ff-shrikhand;
+    font-size: 2rem;
+  }
+  &__arrow {
+    left: 0;
+    position: absolute;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+  }
 }

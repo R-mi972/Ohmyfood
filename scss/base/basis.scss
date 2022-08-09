@@ -1,23 +1,33 @@
-@import"../utils/variables.scss";
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
 
-
-*,
-::before,::after{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-    font-family: $ff-roboto;
-   
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
 }
-
-main {
-     padding: 0 7rem;
-
+h1, h2, h3, h4, h5, h6, p, span {
+  @include ff-roboto;
+  line-height: 1.4;
 }
-
-h1 h2 h3 h4 h5 h6 {
-    font-weight: 800;
+h2 {
+  margin-bottom: 2rem;
+}
+a {
+  color: $dark-grey;
+  text-decoration: unset;
+  cursor: pointer;
+}
+img {
+  user-select: none;
+  max-width: 100%;
+  height: auto;
 }

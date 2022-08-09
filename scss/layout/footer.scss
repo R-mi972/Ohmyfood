@@ -3,15 +3,39 @@
 
 
 footer {
-    background: $dark-grey;
-    padding:0 2rem;
-    color: #fff;
-    h2 {
-        font-family: $ff-shrikhand;
-        font-weight: 500;
-    }
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  @include ff-roboto;
+  background-color: $dark-grey;
+  color: $light-grey;
 
-    p{
-        padding: 0.2 ;
+  a {
+    color: $light-grey;
+  }
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+
+  &__logo img {
+    width: 100px;
+    filter: invert(1);
+    padding-bottom: 1rem;
+  }
+
+  &__menu {
+    list-style-type: none;
+    .fa {
+      padding-right: .4rem;
     }
+    li {
+      margin: .5rem 0;
+      &:hover {
+        @include brightness-effect();
+
+      }
+    }
+  }
 }

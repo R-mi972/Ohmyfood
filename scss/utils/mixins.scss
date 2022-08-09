@@ -1,14 +1,42 @@
-@import"../utils/variables.scss";
+@import "../utils/variables.scss";
 
-
-@mixin box-shadow {
-    box-shadow: 2px 1px 8px -3px #000;
-    
+@mixin ff-shrikhand {
+  font-family: $ff-shrikhand;
 }
 
-@mixin scaling {
-    transform: scale(1.02);
+@mixin ff-roboto {
+  font-family: $ff-roboto;
 }
+
+@mixin border-radius(
+  $radius1: 20px,
+  $radius2: 20px,
+  $radius3: 20px,
+  $radius4: 20px
+) {
+  border-radius: $radius1 $radius2 $radius3 $radius4;
+}
+
+@mixin box-shadow($x: 2px, $y: 3px, $blur: 10px) {
+  box-shadow: #35353547 $x $y $blur;
+}
+
+@mixin mw-1300 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@mixin brightness-effect($value: 0.8) {
+  transition: 0.2s;
+  filter: brightness($value);
+}
+
+@mixin ellipsis-text() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 
 
 

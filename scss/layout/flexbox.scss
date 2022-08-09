@@ -1,0 +1,24 @@
+@import"../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.content {
+  padding-top: $navheight;
+}
+.ctner {
+}
+.row {
+  display: flex;
+  flex: 3;
+}
+.col {
+  flex: 1;
+}
+@for $c from 2 through 3 {
+  .col-#{$c} {
+    flex: $c;
+  }
+}
+
+.al-c {
+  align-items: center;
+}
