@@ -1,14 +1,18 @@
-@import "../utils/variables.scss";
-@import "../utils/mixins.scss";
+
 
 @keyframes opac {
   0% {
     opacity: 1;
+
+  }
+
+ 75% {
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: .5;
     visibility: hidden;
-    position: absolute;
+    position: fixed;
   }
 }
 @keyframes loading {
@@ -28,7 +32,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.954);
   z-index: 10;
-  animation: opac 2s ease-in-out both;
+  animation: opac 3s ease-in-out both;
   &_content {
     display: flex;
     align-items: center;

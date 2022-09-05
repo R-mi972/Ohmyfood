@@ -440,10 +440,13 @@ img {
   0% {
     opacity: 1;
   }
+  75% {
+    opacity: 1;
+  }
   100% {
-    opacity: 0;
+    opacity: 0.5;
     visibility: hidden;
-    position: absolute;
+    position: fixed;
   }
 }
 @keyframes loading {
@@ -462,7 +465,7 @@ img {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.954);
   z-index: 10;
-  animation: opac 2s ease-in-out both;
+  animation: opac 3s ease-in-out both;
 }
 .loading_content {
   display: flex;
@@ -522,7 +525,6 @@ button-large, a.btn-large {
 .restaurants__card_heart .fa-regular:hover,
 .restaurant__title_fav .fa-regular:hover {
   transform: scale(1.1);
-  transition: 0.4s;
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -700,8 +702,8 @@ button-large, a.btn-large {
   display: flex;
   background-color: white;
   box-shadow: rgba(21, 21, 21, 0.231372549) 1px 2px;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 10px;
   height: 60px;
   width: 100%;
   z-index: 10;
@@ -769,6 +771,7 @@ footer a {
   font-size: 1.1rem;
   margin-right: 10px;
   align-self: center;
+  color: black;
 }
 .hero_section__content {
   display: flex;
@@ -832,6 +835,9 @@ footer a {
   font-size: 1.3rem;
   text-align: center;
   color: #7e7e7e;
+}
+.functioning_section__icon:hover {
+  color: #9356DC;
 }
 .functioning_section__icon .fa-mobile-phone {
   font-size: 1.8rem;

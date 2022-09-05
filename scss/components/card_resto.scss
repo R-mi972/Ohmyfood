@@ -1,5 +1,4 @@
-@import"../utils/variables.scss";
-@import"../utils/mixins.scss";
+
 
 .restaurant {
   &__card {
@@ -53,10 +52,13 @@
         margin: 0;
         .fa {
           animation: check 0.5s;
+           
+          
         }
       }
       transition: 0.2s;
       @include box-shadow(2px, 4px, 7px);
+       
     }
     &_group {
       display: flex;
