@@ -3,17 +3,26 @@
     cursor: pointer;
     font-size: 1.5rem;
     
-    &:hover {
+     
+    
+    &::before{
+      background: transparent;
+      opacity: .3;
+
+
+    }
+    &:hover::before {
       transform: scale(1.1);
       background: $linear-gradient;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-     
-      &:before {
-        font-family: "Font Awesome 6 Free";
-        content: "\f004";
-        font-weight: 900;
+       font-family: "Font Awesome 6 Free";
+       content: "\f004";
+       font-weight: 900;
+       opacity: 1;
+      transition: all 2s linear;
+      
         } 
     }
-  }
+  

@@ -522,19 +522,23 @@ button-large, a.btn-large {
   cursor: pointer;
   font-size: 1.5rem;
 }
-.restaurants__card_heart .fa-regular:hover,
-.restaurant__title_fav .fa-regular:hover {
+.restaurants__card_heart .fa-regular::before,
+.restaurant__title_fav .fa-regular::before {
+  background: transparent;
+  opacity: 0.3;
+}
+.restaurants__card_heart .fa-regular:hover::before,
+.restaurant__title_fav .fa-regular:hover::before {
   transform: scale(1.1);
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.restaurants__card_heart .fa-regular:hover:before,
-.restaurant__title_fav .fa-regular:hover:before {
   font-family: "Font Awesome 6 Free";
   content: "\f004";
   font-weight: 900;
+  opacity: 1;
+  transition: all 2s linear;
 }
 
 .restaurants__card {
