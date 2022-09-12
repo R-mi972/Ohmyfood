@@ -823,6 +823,9 @@ footer a {
 .functioning_section__card:hover {
   background-color: rgba(146, 86, 220, 0.2470588235);
 }
+.functioning_section__card:hover i::before {
+  color: #9356DC;
+}
 .functioning_section__number {
   font-family: "Roboto", sans-serif;
   border-radius: 100% 100% 100% 100%;
@@ -839,9 +842,6 @@ footer a {
   font-size: 1.3rem;
   text-align: center;
   color: #7e7e7e;
-}
-.functioning_section__icon:hover {
-  color: #9356DC;
 }
 .functioning_section__icon .fa-mobile-phone {
   font-size: 1.8rem;

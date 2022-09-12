@@ -69,8 +69,10 @@
     @include border-radius();
     &:hover {
       background-color: #9256dc3f;
-      
-       
+     & i::before {
+      color: $primary;
+
+      }
     }
   }
 
@@ -92,9 +94,8 @@
     font-size: 1.3rem;
     text-align: center;
     color: #7e7e7e;
-  &:hover{
-    color: $primary;
-  }
+
+  
 
     .fa-mobile-phone {
       font-size: 1.8rem;
